@@ -1,0 +1,22 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "crm backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/drewatienza/crm.git"
+  },
+  "author": "Drew Atienza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewatienza/crm/issues"
+  },
+  "homepage": "https://github.com/drewatienza/crm#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
