@@ -28,3 +28,9 @@ export const updateContact = (req, res) => {
     err ? res.send(err) : res.json(contact);
   });
 }
+
+export const deleteContact = (req, res) => {
+  Contact.deleteOne({ _id: req.params.contactID }, (err, contact) => {
+    err ? res.send(err) : res.json({ message: 'successfully deleted contact'});
+  });
+}
