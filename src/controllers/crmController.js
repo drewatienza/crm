@@ -16,3 +16,15 @@ export const getContacts = (req, res) => {
     err ? res.send(err) : res.json(contact);
   });
 }
+
+export const getContactWithID = (req, res) => {
+  Contact.findById(req.params.contactID, (err, contact) => {
+    err ? res.send(err) : res.json(contact);
+  });
+}
+
+export const updateContact = (req, res) => {
+  Contact.findOneAndUpdate({ _id: req.params.contactID }, req.body, { new: true, useFindAndModify: false }, (err, contact) => {
+    err ? res.send(err) : res.json(contact);
+  });
+}
